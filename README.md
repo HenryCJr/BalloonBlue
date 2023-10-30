@@ -2,7 +2,7 @@
 My university work of 10/2023. BalloonBlue is a e-commerce of books and e-books, created with the intention of help nacionality authors for sell your books and e-books.
 <br><br>
 
-_______________________________________________________________<br>
+**_______________________________________________________________<br>
 (En/US)<br>
 RFs:<br>
 └ RF01: User Registration <br>
@@ -30,7 +30,7 @@ RFs:<br>
 └ RF09: Demos de Livros<br>
 └ RF10: Biblioteca de Ebooks do usuário<br>
 └ RF11: Leitura das Obras Adquiridas<br>
-_______________________________________________________________<br>
+_______________________________________________________________<br>**
 <br><br>
 
 ![MicrosoftTeams-image](https://github.com/HenryCJr/BalloonBlue/assets/104084891/49530109-34c7-49eb-8180-046525ace9a4)<br>(Logo)
