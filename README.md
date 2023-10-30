@@ -1,4 +1,4 @@
-<center>![MicrosoftTeams-image](https://github.com/HenryCJr/BalloonBlue/assets/104084891/49530109-34c7-49eb-8180-046525ace9a4)</center><br>(Logo)
+![MicrosoftTeams-image](https://github.com/HenryCJr/BalloonBlue/assets/104084891/49530109-34c7-49eb-8180-046525ace9a4)<br>(Logo)
 # BalloonBlue
 My university work of 10/2023. BalloonBlue is a e-commerce of books and e-books, created with the intention of help nacionality authors for sell your books and e-books.
 <br><br>
