@@ -1,21 +1,21 @@
 # BalloonBlue
 My university work of 10/2023. BalloonBlue is a e-commerce of books and e-books, created with the intention of help nacionality authors for sell your books and e-books.
+<br><br>
 
-
-_______________________________________________________________
-(En/US)
+_______________________________________________________________<br>
+(En/US)<br>
 RFs:
-└ RF01: User Registration
-└ RF02: List of Books for sale
-└ RF03: Categorical search filter for Books for sale
-└ RF04: Search for books or authors
-└ RF05: Favorite Works
-└ RF06: Shopping cart
-└ RF07: Sending digital works / Sending works for sale
-└ RF08: Register user as author if there are works in their name
-└ RF09: Book Demos
-└ RF10: User Ebook Library
-└ RF11: Reading of Acquired Works
+└ RF01: User Registration <br>
+└ RF02: List of Books for sale<br>
+└ RF03: Categorical search filter for Books for sale<br>
+└ RF04: Search for books or authors<br>
+└ RF05: Favorite Works<br>
+└ RF06: Shopping cart<br>
+└ RF07: Sending digital works / Sending works for sale<br>
+└ RF08: Register user as author if there are works in their name<br>
+└ RF09: Book Demos<br>
+└ RF10: User Ebook Library<br>
+└ RF11: Reading of Acquired Works<br>
 ----------------------------------------------------------------
 (Pt/Br)
 RFs:
