@@ -1,3 +1,4 @@
+![MicrosoftTeams-image](https://github.com/HenryCJr/BalloonBlue/assets/104084891/49530109-34c7-49eb-8180-046525ace9a4)<br>(Logo)
 # BalloonBlue
 My university work of 10/2023. BalloonBlue is a e-commerce of books and e-books, created with the intention of help nacionality authors for sell your books and e-books.
 <br><br>
@@ -33,6 +34,6 @@ RFs:<br>
 _______________________________________________________________<br>**
 <br><br>
 
-![MicrosoftTeams-image](https://github.com/HenryCJr/BalloonBlue/assets/104084891/49530109-34c7-49eb-8180-046525ace9a4)<br>(Logo)
+
 ![MicrosoftTeams-image(1)](https://github.com/HenryCJr/BalloonBlue/assets/104084891/4ff361a8-57cd-4cc3-9bf7-116fc38bcb78)<br>(Colors)
 
