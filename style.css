@@ -1,0 +1,74 @@
+
+
+head{
+	position: absolute;
+	
+}
+
+header{
+	width: 100%;
+	position: fixed;
+	height: 100px;
+	background: linear-gradient(to right,  #2aabf7, #51baf8);
+	top: 0px;
+	left: 0px;
+	border: 1.5px inherit #fbfdff;
+	overflow: hidden;
+    top: 0;
+  
+
+	
+	
+}
+.conteudo{
+	margin-left: 150px;
+	margin-top: -10px;
+	top: 0px;
+	margin-right: 200px;
+}
+
+#logo{
+	top: 0px;
+	width: 190px;
+	height: 100%;
+	
+}
+
+body{
+	background: #e5f7ff;
+
+
+}
+.pag{
+	position: relative;
+	width: 65%;
+	height: 100%;
+	align-content: center;
+	margin-left: 250px;
+	top: 0px;
+	background: #fbfdff;
+		
+}
+
+.pagina{
+	
+}
+
+
+.banner-ads {
+    margin-top: 20px;
+    width: 60%;
+    height: 100px;
+    background-color: rgb(30, 31, 32);
+    position: relative;
+    right: -13px;
+}
+
+.banner-ads h2 {
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
