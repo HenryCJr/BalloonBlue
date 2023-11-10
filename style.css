@@ -1,74 +1,139 @@
-
-
-head{
-	position: absolute;
-	
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #e5f7ff;
 }
 
-header{
-	width: 100%;
-	position: fixed;
-	height: 100px;
-	background: linear-gradient(to right,  #2aabf7, #51baf8);
-	top: 0px;
-	left: 0px;
-	border: 1.5px inherit #fbfdff;
-	overflow: hidden;
-    top: 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  top: 0;
+  text-align: center;
+
+}
+
+header {
+  background: linear-gradient(to right,  #2aabf7, #51baf8);
+  color: #fff;
+}
+
+.perfil {
+  background-color: #007bff;
+  text-align: center;
+  color: #fff;
+  border: none;
+  width: 50px;
+  border-radius: 100%;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.ftPerfil{
+	width: 20px;
+
+}
+
+#logo {
+  max-width: 170px;
+
+}
+
+#search-form {
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+#cat-form {
+
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+#search-form input {
+  padding: 8px;
+  width: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+.btnForm {
+  background-color: #007bff;
+  border-radius: 10px;
+  margin: 15px;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+nav {
+  background: linear-gradient(to right,  #2aabf7, #51baf8);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.category-button {
+  background: url("balloon.png") no-repeat;
+  color: #2aabf7;
+
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 15px;
   
-
-	
-	
-}
-.conteudo{
-	margin-left: 150px;
-	margin-top: -10px;
-	top: 0px;
-	margin-right: 200px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
 }
 
-#logo{
-	top: 0px;
-	width: 190px;
-	height: 100%;
-	
-}
-
-body{
-	background: #e5f7ff;
-
-
-}
 .pag{
-	position: relative;
-	width: 65%;
-	height: 100%;
-	align-content: center;
-	margin-left: 250px;
-	top: 0px;
-	background: #fbfdff;
-		
-}
-
-.pagina{
+	margin-left: 200px;
+	margin-right: 200px;
 	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fbfdff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 
-.banner-ads {
-    margin-top: 20px;
-    width: 60%;
-    height: 100px;
-    background-color: rgb(30, 31, 32);
-    position: relative;
-    right: -13px;
+
+.banner-container {
+  width: 100%;
+  max-width: 1000px; /* ajuste conforme necessário */
+  margin: auto;
+  overflow: hidden;
 }
 
-.banner-ads h2 {
-    position: absolute;
-    left: 150px;
-    top: 10px;
-    color: white;
-    font-size: 15px;
-    font-style: italic;
+.bannerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.banner-container {
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
