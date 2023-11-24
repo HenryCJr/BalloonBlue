@@ -25,9 +25,11 @@
                     // Itera sobre a lista de livros
                     data.list.forEach(function (book) {
                         
+                        var dirCapa = book.capa.replace("C:\\fakepath\\", "");
+                        
                         var productHtml = '<div class="product">' +
                             '<div class="circle-button" onclick="location.href = \'https://www.google.com\';">' +
-                            '<img class="productImage" src="img/capes/' + book.capa + '" alt="Alternate Text"><br>' +
+                            '<img class="productImage" src="img/capes/' + dirCapa + '" alt="Alternate Text"><br>' +
                             '<h3 class="productName">' + book.name + '</h3>' +
                             '<p class="productCategory">' + book.category + '</p>' +
                             '<p class="productPrice">' + book.price.toFixed(2) + '</p>' +

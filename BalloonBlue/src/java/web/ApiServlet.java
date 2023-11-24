@@ -222,7 +222,7 @@ public class ApiServlet extends HttpServlet {
             String autores = body.getString("autores");
             String description = body.getString("description");
             double price = body.getDouble("price");
-            String capa = "capa";
+            String capa = body.getString("capa");
             String arq = body.getString("archive");
            
             
