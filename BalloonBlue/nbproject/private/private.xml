@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/cimin/Desktop/BalloonBlue/JavaProject/BalloonBlue/web/index.jsp</file>
+            <file>file:/C:/Users/cimin/Desktop/BalloonBlue/JavaProject/BalloonBlue/web/create.jsp</file>
+            <file>file:/C:/Users/cimin/Desktop/BalloonBlue/JavaProject/BalloonBlue/src/java/model/Book.java</file>
+            <file>file:/C:/Users/cimin/Desktop/BalloonBlue/JavaProject/BalloonBlue/web/book.jsp</file>
+            <file>file:/C:/Users/cimin/Desktop/BalloonBlue/JavaProject/BalloonBlue/web/user.jsp</file>
+            <file>file:/C:/Users/cimin/Desktop/BalloonBlue/JavaProject/BalloonBlue/src/java/web/ApiServlet.java</file>
         </group>
     </open-files>
 </project-private>

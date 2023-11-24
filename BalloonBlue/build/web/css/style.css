@@ -1,40 +1,40 @@
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #e5f7ff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #e5f7ff;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-  top: 0;
-  text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    top: 0;
+    text-align: center;
 
 }
 
 header {
-  background: linear-gradient(to right,  #2aabf7, #51baf8);
-  color: #fff;
+    background: linear-gradient(to right,  #2aabf7, #51baf8);
+    color: #fff;
 }
 
 .perfil {
-   background-color: #007bff;
-  border-radius: 50%;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-            max-width: 25px;
-margin: 5px;
-            
+    background-color: #007bff;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    max-width: 25px;
+    margin: 5px;
 
-         
 
-            max-height: 25px;
-           
+
+
+    max-height: 25px;
+
 
 }
 
@@ -42,176 +42,253 @@ margin: 5px;
 
 
 .ftPerfil{
-	max-width: 100%;
+    max-width: 100%;
 
 }
 
 #logo {
-  max-width: 170px;
+    max-width: 170px;
 
 }
 
 #search-form {
-  display: flex;
-  top: 0;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
 
 
 }
+
+#login {
+    background-color: #f9f9f9;
+
+    padding: 20px;
+
+    text-align: center;
+
+    margin: 10px auto;
+
+    width: 300px;
+
+    box-sizing: border-box;
+
+
+}
+
+#book-form {
+    background-color: #f9f9f9;
+
+    position: flex;
+    
+    padding: 20px;
+    
+
+    text-align: left;
+    margin-top: 10px;
+
+    margin: 10px auto;
+
+    width: 300px;
+
+    box-sizing: border-box;
+
+
+}
+
+.message {
+
+    padding: 20px;
+
+   
+
+    width: 300px;
+
+    background-color: #f1f1f1;
+
+    box-sizing: border-box;
+
+}
+
+
 
 #cat-form {
 
-  display: flex;
-  top: 0;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
 
 
 }
+
+
 
 #search-form input {
-  padding: 8px;
-  width: 500px;
-  border: none;
-  border-radius: 10px 0 0 10px;
+    padding: 8px;
+    width: 500px;
+    border: none;
+    border-radius: 10px 0 0 10px;
 }
 
+#login input {
+    padding: 8px;
+    width: 100%;
+    top: 5px;
+    border: 1px solid #ddd;
+
+    box-sizing: border-box;
+}
+
+#login button{
+    background-color: #007bff;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
 .btnSearch {
-  background-color: #007bff;
-  border-radius: 0 10px 10px 0;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
+    background-color: #007bff;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
 }
 
 
 .btnForm {
-  background-color: #007bff;
-  border-radius: 10px;
-  margin: 15px;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
+    background-color: #007bff;
+    border-radius: 10px;
+    margin: 15px;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
 }
 
 nav {
-  background: linear-gradient(to right,  #2aabf7, #51baf8);
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+    background: linear-gradient(to right,  #2aabf7, #51baf8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .category-button {
-  background: url("balloon.png") no-repeat;
-  color: #2aabf7;
+    background: url("balloon.png") no-repeat;
+    color: #2aabf7;
 
-  justify-content: space-between;
-  border-radius: 10px;
-  margin: 15px;
-  
-  border: none;
-  padding: 8px;
-  cursor: pointer;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 15px;
+
+    border: none;
+    padding: 8px;
+    cursor: pointer;
 }
 
 .pag{
-	margin-left: 200px;
-	margin-right: 200px;
-	
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #fbfdff;
+    margin-left: 150px;
+    margin-right: 150px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fbfdff;
 }
 
+
+
+
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 
 
 .banner-container {
-  width: 100%;
-  max-width: 1000px; /* ajuste conforme necessário */
-  margin: auto;
-  overflow: hidden;
+    width: 100%;
+    max-width: 1500px; /* ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden;
 }
 
 .bannerImg {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
 .banner-container {
-  
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
 
- margin-left: 10px;
- max-width: 200px;
- height: 100%;
- text-align: left;
+    margin-left: 10px;
+    max-width: 200px;
+    height: 100%;
+    text-align: left;
 
- align-items: center;
+    align-items: center;
 
- padding: 1rem;
+    padding: 1rem;
 
- 
+
 }
 
 .home{
-  
-  display: flex;
+
+    display: flex;
 }
 
 main{
-  flex: 1;
+    flex: 1;
 }
 
 .navbar ul {
 
- 
 
- list-style-type: none;
 
- margin: 0;
+    list-style-type: none;
 
- padding: 0;
+    margin: 0;
+
+    padding: 0;
 
 }
 
 
 .navbar li {
 
- margin-top: 1rem;
+    margin-top: 1rem;
 
 }
 
 
 .navbar a, h3 {
 
- color: gray;
- font-family: 'verdana', sans-serif;
- font-size: 14px;
- text-decoration: none;
+    color: gray;
+    font-family: 'verdana', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
 
 }
 
 
 .navbar a:hover {
 
- color: #ccc;
+    color: #ccc;
 
 }
 
@@ -254,28 +331,28 @@ main{
 
 .circle-button {
 
-            max-width: 100%;
+    max-width: 100%;
 
-            background-color: #008CBA;
+    background-color: #008CBA;
 
-            border-radius: 50%;
+    border-radius: 50%;
 
-            max-height: 50%;
-           
-
-
-        }
+    max-height: 50%;
 
 
-        .circle-button img {
 
-            max-width: 75%;
+}
 
-            /**height: 50px;**/
 
-        }
+.circle-button img {
 
- .circle-button:hover img {
+    max-width: 75%;
+
+    /**height: 50px;**/
+
+}
+
+.circle-button:hover img {
 
     transform: scale(1.1);
 
