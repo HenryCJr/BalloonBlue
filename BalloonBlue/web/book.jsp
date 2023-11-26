@@ -61,7 +61,7 @@
             <div id="app" class="bodcontainer">
                 <h2>Novo Livro</h2>
 
-                <form id="bookForm" onsubmit="insertOrUpdateBook(); return false;">
+                <form id="bookForm" onsubmit="passwordConfirm(); return false;">
                     <label for="name">Título:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -91,7 +91,7 @@
 
         <script>
 
-            
+       
 
             function insertOrUpdateBook() {
                 var jsonData = {

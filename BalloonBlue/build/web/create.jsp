@@ -67,7 +67,7 @@
 
                     <label for="user">Username:</label>
                     <input type="text" id="user" name="user" required>
-                    
+
                     <label for="contact">Contato:</label>
                     <input type="text" id="contact" name="contact" required>
 
@@ -77,7 +77,7 @@
                     <label for="autores">Confirmar Senha:</label>
                     <input type="password" placeholder="Password" name="password" id="passwordConf" required>
 
-                    
+
                     <button type="submit">Enviar</button>
                     <div class="message">You are a member? <a href="login.jsp">Sign in</a>
                 </form>
@@ -86,25 +86,32 @@
 
 
         <script>
+            function passwordConfirm() {
+                var password = $("#passwordInput").val();
+                var confirmPassword = $("#passwordConf").val();
 
-            
+                if (password === confirmPassword) {
+                    insertOrUpdateUser();
+                } else {
+                    alert("As senhas não coincidem!");
+                }
+            }
 
             function insertOrUpdateUser() {
                 var jsonData = {
-                    // Adicione campos do formulário aqui
                     "login": $("#user").val(),
                     "name": $("#name").val(),
                     "role": "ADMIN",
                     "password": $("#passwordInput").val(),
                     "contact": $("#contact").val(),
                     "books": "",
-                    "obras": "",
-                    // Adicione outros campos do formulário conforme necessário
+                    "obras": ""
+                            // Adicione outros campos do formulário conforme necessário
                 };
 
                 $.ajax({
                     type: 'POST',
-                    url: '/BalloonBlue/api/users', // Substitua pelo caminho do seu endpoint de livro
+                    url: '/BalloonBlue/api/users', // Substitua pelo caminho do seu endpoint de usuário
                     contentType: 'application/json', // Indica que você está enviando JSON
                     data: JSON.stringify(jsonData),
                     success: function (response) {
@@ -119,12 +126,14 @@
             }
 
             // Evento de envio do formulário
-            $('#userForm').submit(function (event) {
-                event.preventDefault();  // Evita o comportamento padrão do formulário
-                //insertOrUpdateBook();  // Chama a função de inserção/atualização
+            $(document).ready(function () {
+                $('#userForm').submit(function (event) {
+                    event.preventDefault(); // Evita o comportamento padrão do formulário
+                    passwordConfirm(); // Chama a função de verificação de senha
+                });
             });
-
         </script>
+
 
 
     </body>

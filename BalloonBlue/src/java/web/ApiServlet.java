@@ -166,11 +166,11 @@ public class ApiServlet extends HttpServlet {
     }
     
     private void processUsers(JSONObject file, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        if (request.getSession().getAttribute("users") == null) {
+        if (request.getSession().getAttribute("users") != null) {
             response.sendError(401, "Unauthorized: No session");
-        } else if (!((Users) request.getSession().getAttribute("users")).getRole().equals("ADMIN")) {
+        }/* else if (!((Users) request.getSession().getAttribute("users")).getRole().equals("ADMIN")) {
             response.sendError(401, "Unauthorized: Only admin can manage users");
-        } else if (request.getMethod().toLowerCase().equals("get")) {
+        }*/ else if (request.getMethod().toLowerCase().equals("get")) {
                 file.put("list", new JSONArray(Users.getUsers()));
             } else if (request.getMethod().toLowerCase().equals("post")) {
                 JSONObject body = getJSONBODY(request.getReader());
