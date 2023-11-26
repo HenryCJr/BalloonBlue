@@ -22,9 +22,11 @@
         <div class='pag'>
             <div id='login'>
                 <h1>Login</h1>
-                <input type="text" placeholder="Username" name="login" id="login" required>
-                <input type="password" placeholder="Password" name="password" id="password" required>
+                <form id="loginForm">
+                <input type="text" placeholder="Username" name="login" id="loginInput" required>
+                <input type="password" placeholder="Password" name="password" id="passwordInput" required>
                 <input type="submit" value="Login" id="loginBtn">
+            </form>
                 <div class="message">Not a member? <a href="create.jsp">Sign in</a></div>
             </div>
 
@@ -35,31 +37,44 @@
 
 
         <script>
-            // Quando o documento estiver pronto
-            $(document).ready(function () {
-                // Adicione um manipulador de clique ao botão de login
-                $("#loginBtn").click(function () {
-                    // Obtenha os valores dos campos de entrada
-                    var login = $("#login").val();
-                    var password = $("#password").val();
+        $(document).ready(function () {
+            $("#loginForm").submit(function (event) {
+                event.preventDefault();
 
-                    // Faça uma solicitação AJAX usando jQuery
-                    $.ajax({
-                        type: "GET",
-                        url: "BalloonBlue/api/login",
-                        data: {login: login, password: password},
-                        success: function (response) {
-                            // Lógica de sucesso - manipule a resposta do servidor conforme necessário
-                            console.log(response);
-                        },
-                        error: function (error) {
-                            // Lógica de erro - manipule os erros conforme necessário
-                            console.error("Erro ao fazer login:", error);
-                        }
-                    });
+                // Obtém os valores dos campos de entrada
+                var username = $("#loginInput").val();
+                var password = $("#passwordInput").val();
+
+                // Verifica se os campos estão preenchidos
+                if (!username || !password) {
+                    alert("Por favor, preencha todos os campos.");
+                    return;
+                }
+
+                // Cria um objeto JSON com os dados
+                var userData = {
+                    "login": username,
+                    "password": password
+                };
+
+                // Envia os dados para o servlet usando AJAX
+                $.ajax({
+                    type: "PUT",
+                    url: "/BalloonBlue/api/login", // Substitua pelo caminho correto para o seu servlet
+                    contentType: "application/json",
+                    data: JSON.stringify(userData),
+                    success: function (response) {
+                        // Manipule a resposta do servidor, se necessário
+                        console.log(response);
+                        window.location.href = "user.jsp";
+                    },
+                    error: function (error) {
+                        console.error('Erro na solicitação:', error);
+                    }
                 });
             });
-        </script>
+        });
+    </script>
 
 
 

@@ -144,8 +144,10 @@ public class ApiServlet extends HttpServlet {
             file.put("message", "Logged out");
         } else if (request.getMethod().toLowerCase().equals("get")) {
             // Verificando se existe sessão do usuario
-            if (request.getSession().getAttribute("users") != null) {
+            if (request.getSession().getAttribute("users") == null) {
                 response.sendError(403, "No Session");
+                response.sendError(HttpServletResponse.SC_FORBIDDEN, "No Session");
+                
             } else {
                 // Se houver resgata os atributos
                 Users u = (Users) request.getSession().getAttribute("users");

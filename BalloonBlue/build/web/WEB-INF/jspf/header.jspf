@@ -12,7 +12,7 @@
                 <button class="btnSearch" type="submit">Buscar</button>
 
         
-                <div class="perfil" onclick="location.href='login.jsp';">
+                <div class="perfil" onclick="location.href='user.jsp';">
                     <img class="ftPerfil" src="img/perfil.png" alt="Alternate Text">
                 </div>
         
