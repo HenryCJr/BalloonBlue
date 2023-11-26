@@ -20,7 +20,7 @@
     <body>
 
         <%@ include file="WEB-INF/jspf/header.jspf" %>
-        <%@ include file="WEB-INF/jspf/metodos.jspf" %>
+        
 
         <div class="pag">
 
@@ -130,4 +130,35 @@
         </footer>
 
     </body>
+
+    <script>
+        $(document).ready(function () {
+            $('.category-button').on('click', function () {
+                var categoria = $(this).find('h4').text();
+
+                // Cria um objeto com a categoria
+                var dados = {categoria: categoria};
+
+                // Faz uma requisição AJAX para o servidor com dados em formato JSON
+                $.ajax({
+                    type: 'GET',
+                    url: '/BalloonBlue/api/mybooks',
+                    contentType: 'application/json', // Define o tipo de conteúdo como JSON
+                    data: JSON.stringify(dados), // Converte o objeto para uma string JSON
+                    success: function (data) {
+                        console.log('Dados recebidos:', data);
+                        
+                        
+                        
+                    },
+                    error: function (error) {
+                        console.error('Erro na requisição AJAX:', error);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
 </html>

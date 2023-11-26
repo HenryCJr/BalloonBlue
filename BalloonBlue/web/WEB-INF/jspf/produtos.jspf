@@ -4,55 +4,105 @@
     <!-- Individual Products Go Here -->
 
     <div class="product">
-<script>
-    
-    function excluirPrimeiroLivro() {
-            // Selecione o primeiro elemento e remova
-            $('.product-grid .product:first').remove();
-        }
-    
-        // Função para carregar dados do servlet usando AJAX
-        function carregarDadosDoServlet() {
-            // Faça uma solicitação AJAX usando jQuery
-            $.ajax({
-                type: "GET", // Pode ser GET, POST, etc., dependendo do seu servlet
-                url: "/BalloonBlue/api/mybooks", // Substitua pelo caminho do seu servlet
-                dataType: "json",
-                success: function (data) {
-                    // Atualize os elementos da página com os dados recebidos
-                    console.log(data); // Verifique os dados recebidos no console do navegador
+        <script>
 
-                    // Itera sobre a lista de livros
-                    data.list.forEach(function (book) {
-                        
-                        var dirCapa = book.capa.replace("C:\\fakepath\\", "");
-                        
-                        var productHtml = '<div class="product">' +
-                            '<div class="circle-button" onclick="location.href = \'https://www.google.com\';">' +
-                            '<img class="productImage" src="img/capes/' + dirCapa + '" alt="Alternate Text"><br>' +
-                            '<h3 class="productName">' + book.name + '</h3>' +
-                            '<p class="productCategory">' + book.category + '</p>' +
-                            '<p class="productPrice">' + book.price.toFixed(2) + '</p>' +
-                            '<button>Add to Cart</button>' +
-                            '</div>' +
-                            '</div>';
+            function excluirPrimeiroLivro() {
+                // Selecione o primeiro elemento e remova
+                $('.product-grid .product:first').remove();
+            }
 
-                        // Adiciona o bloco do produto ao contêiner
-                       
-                        $(".product-grid").append(productHtml);
-                    
-                    });
-                    excluirPrimeiroLivro();
-                },
-                error: function (error) {
-                    console.error("Erro ao carregar dados do servlet:", error);
-                }
+            // Função para carregar dados do servlet usando AJAX
+            function carregarDadosDoServlet() {
+                // Faça uma solicitação AJAX usando jQuery
+                $.ajax({
+                    type: "GET", // Pode ser GET, POST, etc., dependendo do seu servlet
+                    url: "/BalloonBlue/api/mybooks", // Substitua pelo caminho do seu servlet
+                    dataType: "json",
+                    success: function (data) {
+                        // Atualize os elementos da página com os dados recebidos
+                        console.log(data); // Verifique os dados recebidos no console do navegador
+
+                        // Itera sobre a lista de livros
+                        data.list.forEach(function (book) {
+
+                            var dirCapa = book.capa.replace("C:\\fakepath\\", "");
+
+                            var productHtml = '<div class="product">' +
+                                    '<div class="circle-button" onclick="location.href = \'https://www.google.com\';">' +
+                                    '<img class="productImage" src="img/capes/' + dirCapa + '" alt="Alternate Text"><br>' +
+                                    '<h3 class="productName">' + book.name + '</h3>' +
+                                    '<p class="productCategory">' + book.category + '</p>' +
+                                    '<p class="productPrice">' + book.price.toFixed(2) + '</p>' +
+                                    '<button>Add to Cart</button>' +
+                                    '</div>' +
+                                    '</div>';
+
+                            // Adiciona o bloco do produto ao contêiner
+
+                            $(".product-grid").append(productHtml);
+
+                        });
+                        excluirPrimeiroLivro();
+                    },
+                    error: function (error) {
+                        console.error("Erro ao carregar dados do servlet:", error);
+                    }
+                });
+            }
+
+            // Função para carregar dados do servlet usando AJAX
+            function carregarDadosDoServletFiltrado(pesquisa) {
+                // Faça uma solicitação AJAX usando jQuery
+                $.ajax({
+                    type: "GET", // Pode ser GET, POST, etc., dependendo do seu servlet
+                    url: "/BalloonBlue/api/mybooks", // Substitua pelo caminho do seu servlet
+
+                    dataType: "json",
+                    success: function (data) {
+                        // Atualize os elementos da página com os dados recebidos
+                        console.log(data); // Verifique os dados recebidos no console do navegador
+                        $(".product-grid").empty();
+                        // Itera sobre a lista de livros
+                        data.list.forEach(function (book) {
+
+
+
+                            if (book.category.toLowerCase().includes(pesquisa.toLowerCase()) ||
+                                    book.autores.toLowerCase().includes(pesquisa.toLowerCase()) ||
+                                    book.name.toLowerCase().includes(pesquisa.toLowerCase()) ||
+                                    pesquisa === "") {
+
+                                var dirCapa = book.capa.replace("C:\\fakepath\\", "");
+
+                                var productHtml = '<div class="product">' +
+                                        '<div class="circle-button" onclick="location.href = \'https://www.google.com\';">' +
+                                        '<img class="productImage" src="img/capes/' + dirCapa + '" alt="Alternate Text"><br>' +
+                                        '<h3 class="productName">' + book.name + '</h3>' +
+                                        '<p class="productCategory">' + book.category + '</p>' +
+                                        '<p class="productPrice">' + book.price.toFixed(2) + '</p>' +
+                                        '<button>Add to Cart</button>' +
+                                        '</div>' +
+                                        '</div>';
+
+                                // Adiciona o bloco do produto ao contêiner
+
+                                $(".product-grid").append(productHtml);
+                            } else {
+
+                            }
+
+                        });
+                        //excluirPrimeiroLivro();
+                    },
+                    error: function (error) {
+                        console.error("Erro ao carregar dados do servlet:", error);
+                    }
+                });
+            }
+
+            // Chame a função para carregar dados assim que a página for carregada
+            $(document).ready(function () {
+                carregarDadosDoServlet();
             });
-        }
-
-        // Chame a função para carregar dados assim que a página for carregada
-        $(document).ready(function () {
-            carregarDadosDoServlet();
-        });
-    </script>
+        </script>
     </div>
