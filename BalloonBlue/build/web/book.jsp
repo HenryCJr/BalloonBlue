@@ -61,7 +61,7 @@
             <div id="app" class="bodcontainer">
                 <h2>Novo Livro</h2>
 
-                <form id="bookForm" onsubmit="passwordConfirm(); return false;">
+                <form id="bookForm" onsubmit="insertOrUpdateBook(); return false;">
                     <label for="name">Título:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -114,6 +114,7 @@
                     success: function (response) {
                         // Lógica de sucesso - manipule a resposta do servidor conforme necessário
                         console.log(response);
+                        window.location.href = "user.jsp";
                     },
                     error: function (error) {
                         // Lógica de erro - manipule os erros conforme necessário

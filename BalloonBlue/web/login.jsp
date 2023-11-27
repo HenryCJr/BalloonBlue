@@ -15,7 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Balloon Blue -- Login</title>
         <%@ include file="WEB-INF/jspf/header.jspf" %>
-        <%@ include file="WEB-INF/jspf/metodos.jspf" %>
+        
     </head>
     <body>
 

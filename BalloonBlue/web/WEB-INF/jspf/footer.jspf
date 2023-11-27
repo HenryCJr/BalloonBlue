@@ -1,0 +1,84 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<footer>
+    <style>
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #008CBA;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+}
+
+        </style>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Entre em Contato</h3>
+            <p>Endereço: Rua BalloonBlue, 123</p>
+            <p>Email: jr@ciminos.com.br</p>
+            <p>Telefone: (13)99671-2113</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+                <a href="#" class="icon-facebook"></a>
+                <a href="#" class="icon-twitter"></a>
+                <a href="#" class="icon-instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 BalloonBlue. Todos os direitos reservados.</p>
+    </div>
+</footer>
+

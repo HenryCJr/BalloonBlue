@@ -20,7 +20,7 @@
     <body>
 
         <%@ include file="WEB-INF/jspf/header.jspf" %>
-        
+
 
         <div class="pag">
 
@@ -28,44 +28,9 @@
                 <img class="bannerImg" src="img/banner1.jpg" alt="Banner">
             </div>
 
+            <%@ include file="WEB-INF/jspf/but.jspf" %>
 
 
-            <form id="cat-form">
-
-
-                <button class="category-button">
-                    <img class="btnBal" src="img/balloon.png" width="50px">
-                    <h4>Adventure</h4>
-                </button>
-
-                <button class="category-button">
-                    <img class="btnBal" src="img/balloon.png" width="50px">
-                    <h4>Romance</h4>
-                </button>
-
-                <button class="category-button">
-                    <img class="btnBal" src="img/balloon.png" width="50px">
-                    <h4>Terror</h4>
-                </button>
-
-                <button class="category-button">
-                    <img class="btnBal" src="img/balloon.png" width="50px">
-                    <h4>Ação</h4>
-                </button>
-
-                <button class="category-button">
-                    <img class="btnBal" src="img/balloon.png" width="50px">
-                    <h4>Fantasia</h4>
-                </button>
-
-                <button class="category-button">
-                    <img class="btnBal" src="img/balloon.png" width="50px">
-                    <h4>Mangá</h4>
-                </button>
-
-
-
-            </form>
             <br>
         </div>
 
@@ -81,37 +46,7 @@
                 <h2>Featured Products</h2>
                 <div class="home">
                     <div class="navbar">
-
-                        <ul>
-
-                            <li><h3>Categorias</h3></li>
-
-                            <li><a href="#">Ação</a></li>
-
-                            <li><a href="#">Romance</a></li>
-
-                            <li><a href="#">Terror</a></li>
-
-                            <li>_______________________</li>
-
-                            <li><h3>Localização</h3></li>
-
-                            <li><a href="#">Frete Grátis</a></li>
-
-                            <li><a href="#">Cidade</a></li>
-
-                            <li><a href="#">Região</a></li>
-
-                            <li><a href="#">Estado</a></li>
-
-                            <li>_______________________</li>
-
-                            <li><a href="#">Top Tier</a></li>
-
-                            <li><a href="#">Destaques</a></li>
-
-                        </ul>
-
+                        <%@ include file="WEB-INF/jspf/categories.jspf" %>
                     </div>
 
 
@@ -120,14 +55,12 @@
 
                 </div>
             </div>
-
+<br><br><br>
         </main>
-
+                    
         <!-- Restante do conteúdo da sua página aqui -->
 
-        <footer>
-            <p>&copy; 2023 BalloonBlue. Todos os direitos reservados.</p>
-        </footer>
+        <%@ include file="WEB-INF/jspf/footer.jspf" %>
 
     </body>
 
@@ -147,9 +80,9 @@
                     data: JSON.stringify(dados), // Converte o objeto para uma string JSON
                     success: function (data) {
                         console.log('Dados recebidos:', data);
-                        
-                        
-                        
+
+
+
                     },
                     error: function (error) {
                         console.error('Erro na requisição AJAX:', error);

@@ -36,8 +36,29 @@
             carregarDadosDoServletFiltrado(pesquisa);
 
             // Redireciona de volta para index.jsp
-           // window.location.href = 'index.jsp';
+            // window.location.href = 'index.jsp';
         });
+
+
+        $(document).ready(function () {
+            // Adiciona um ouvinte de clique para todos os links de filtro
+            $('.category-filter').click(function (event) {
+                event.preventDefault();
+                var pesquisa = $(this).data('filter');
+                carregarDadosDoServletFiltrado(pesquisa);
+            });
+        });
+        
+        $(document).ready(function () {
+            // Adiciona um ouvinte de clique para todos os links de filtro
+            $('.category-button').click(function (event) {
+                event.preventDefault();
+                var pesquisa = $(this).data('filter');
+                carregarDadosDoServletFiltrado(pesquisa);
+            });
+        });
+
+
     </script>
 
 

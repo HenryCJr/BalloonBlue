@@ -1,0 +1,56 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<form id="cat-form">
+
+
+    <script>
+        // Função para carregar dados do servlet usando AJAX
+        function carregarButo() {
+            // Faça uma solicitação AJAX usando jQuery
+            $.ajax({
+                type: "GET", // Pode ser GET, POST, etc., dependendo do seu servlet
+                url: "/BalloonBlue/api/mybooks", // Substitua pelo caminho do seu servlet
+                dataType: "json",
+                success: function (data) {
+                    // Atualize os elementos da página com os dados recebidos
+                    console.log(data); // Verifique os dados recebidos no console do navegador
+                    var i = 0;
+                    var categorias = '';
+
+                    // Itera sobre a lista de livros
+                    data.list.forEach(function (book) {
+                        categorias += book.category.toString() + " ";
+                        var productHtml = '';
+
+                        if (categorias.toLowerCase().includes(book.category.toLowerCase())) {
+                            i += 1;
+
+
+                            productHtml = '<button class="category-button" data-category="' + book.category + '">' +
+                                    '<img class="btnBal" src="img/balloon.png" width="50px">' +
+                                    '<h4>'+ book.category +'</h4>' +
+                                    '</button>';
+
+                            i = 0;
+
+
+                            // Adiciona o bloco do produto ao contêiner
+                            $("#cat-form").append(productHtml);
+                        } else {
+                            // Faça algo se a categoria já foi adicionada
+                        }
+                    });
+                },
+                error: function (error) {
+                    console.error("Erro ao carregar dados do servlet:", error);
+                }
+            });
+        }
+
+        // Chame a função para carregar dados assim que a página for carregada
+        $(document).ready(function () {
+            carregarButo();
+        });
+    </script>
+
+</form>

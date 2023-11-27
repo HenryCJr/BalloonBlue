@@ -47,7 +47,8 @@ public class ApiServlet extends HttpServlet {
     
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       
+       request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json;charset=UTF-8");
         JSONObject file = new JSONObject();
         
@@ -201,9 +202,9 @@ public class ApiServlet extends HttpServlet {
         }
     
     private void processBooks(JSONObject file, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        if (request.getSession().getAttribute("users") != null) {
+        /*if (request.getSession().getAttribute("users") == null) {
             response.sendError(401, "Unauthorized: No session");
-        } else if (request.getMethod().toLowerCase().equals("get")) {
+        } else */if (request.getMethod().toLowerCase().equals("get")) {
             file.put("list", new JSONArray(Book.getBook()));
         } else if (request.getMethod().toLowerCase().equals("post")) {
             JSONObject body = getJSONBODY(request.getReader());

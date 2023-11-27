@@ -126,6 +126,7 @@ header {
 
 #search-form input {
     padding: 8px;
+    
     width: 500px;
     border: none;
     border-radius: 10px 0 0 10px;
@@ -207,7 +208,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: bottom;
     bottom: 0;
     width: 100%;
 }
@@ -357,3 +358,13 @@ main{
     transform: scale(1.1);
 
 }
+
+/* Adicionando media query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    #search-form input,
+    #login input,
+    #login button,
+    .btnSearch,
+    .btnForm {
+        width: 100%;
+    }
