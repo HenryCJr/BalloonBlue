@@ -24,38 +24,31 @@
     </div>
 
     <script>
+
+
+        // Adiciona um ouvinte de clique para todos os links de filtro
+        $(document).ready(function () {
+            // Adiciona um ouvinte de clique para todos os links de filtro
+            $('.category-filter, .category-button').click(function (event) {
+                event.preventDefault();
+                var filterValue = $(this).data('filter');
+                carregarDadosDoServletFiltrado(filterValue);
+            });
+        });
+
         // Manipula o envio do formulário
         $("#search-form").submit(function (event) {
             // Impede o envio padrão do formulário
             event.preventDefault();
 
             // Obtém o texto inserido no campo de busca
-            var pesquisa = $("#search-input").val();
+            pesquisa = $("#search-input").val();
 
             // Chama a função para carregar dados com a categoria como parâmetro
             carregarDadosDoServletFiltrado(pesquisa);
 
             // Redireciona de volta para index.jsp
             // window.location.href = 'index.jsp';
-        });
-
-
-        $(document).ready(function () {
-            // Adiciona um ouvinte de clique para todos os links de filtro
-            $('.category-filter').click(function (event) {
-                event.preventDefault();
-                var pesquisa = $(this).data('filter');
-                carregarDadosDoServletFiltrado(pesquisa);
-            });
-        });
-        
-        $(document).ready(function () {
-            // Adiciona um ouvinte de clique para todos os links de filtro
-            $('.category-button').click(function (event) {
-                event.preventDefault();
-                var pesquisa = $(this).data('filter');
-                carregarDadosDoServletFiltrado(pesquisa);
-            });
         });
 
 

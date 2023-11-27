@@ -27,8 +27,32 @@
             <div class="banner-container">
                 <img class="bannerImg" src="img/banner1.jpg" alt="Banner">
             </div>
+            <form id="cat-form">
+                <button type="button" class="category-button" data-filter="Ação">
+                    <img class="btnBal" src="img/balloon.png" width="50px">
+                    <h4>Ação</h4>
+                </button>
 
-            <%@ include file="WEB-INF/jspf/but.jspf" %>
+                <button type="button" class="category-button" data-filter="Aventura">
+                    <img class="btnBal" src="img/balloon.png" width="50px">
+                    <h4>Aventura</h4>
+                </button>
+
+                <button type="button" class="category-button" data-filter="Romance">
+                    <img class="btnBal" src="img/balloon.png" width="50px">
+                    <h4>Romance</h4>
+                </button>
+
+                <button type="button" class="category-button" data-filter="Terror">
+                    <img class="btnBal" src="img/balloon.png" width="50px">
+                    <h4>Terror</h4>
+                </button>
+
+                <button type="button" class="category-button" data-filter="Suspense">
+                    <img class="btnBal" src="img/balloon.png" width="50px">
+                    <h4>Suspense</h4>
+                </button>
+            </form>
 
 
             <br>
@@ -46,7 +70,26 @@
                 <h2>Featured Products</h2>
                 <div class="home">
                     <div class="navbar">
-                        <%@ include file="WEB-INF/jspf/categories.jspf" %>
+
+                        <form id="catg-form">
+                            <ul id="cat-ul">
+                                <li><h3>Categorias</h3></li>
+                                <li><a href="" class="category-filter" data-filter="Ação">Ação</a></li>
+                                <li><a href="" class="category-filter" data-filter="Aventura">Aventura</a></li>
+                                <li><a href="" class="category-filter" data-filter="Romance">Romance</a></li>
+                                <li>_______________________</li>
+                                <li><a href="" class="category-filter" data-filter="Ficção Científica">Ficção Científica</a></li>
+                                <li><a href="" class="category-filter" data-filter="Fantasia">Fantasia</a></li>
+                                <li><a href="" class="category-filter" data-filter="Mistério">Mistério</a></li>
+                                <li>_______________________</li>
+                                <li><a href="" class="category-filter" data-filter="História">História</a></li>
+                                <li><a href="" class="category-filter" data-filter="Biografia">Terror</a></li>
+
+
+                            </ul>
+
+                        </form>
+
                     </div>
 
 
@@ -55,9 +98,9 @@
 
                 </div>
             </div>
-<br><br><br>
+            <br><br><br>
         </main>
-                    
+
         <!-- Restante do conteúdo da sua página aqui -->
 
         <%@ include file="WEB-INF/jspf/footer.jspf" %>
