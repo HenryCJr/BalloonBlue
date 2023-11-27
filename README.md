@@ -10,13 +10,12 @@ RFs:<br>
 └ RF02: List of Books for sale<br>
 └ RF03: Categorical search filter for Books for sale<br>
 └ RF04: Search for books or authors<br>
-└ RF05: Favorite Works<br>
-└ RF06: Shopping cart<br>
-└ RF07: Sending digital works / Sending works for sale<br>
-└ RF08: Register user as author if there are works in their name<br>
-└ RF09: Book Demos<br>
-└ RF10: User Ebook Library<br>
-└ RF11: Reading of Acquired Works<br>
+└ RF05: Shopping cart<br>
+└ RF06: Sending digital works / Sending works for sale<br>
+└ RF07: Register user as author if there are works in their name<br>
+└ RF08: Book Demos<br>
+└ RF09: User Ebook Library<br>
+└ RF10: Reading of Acquired Works<br>
 ----------------------------------------------------------------<br>
 (Pt/Br)<br>
 RFs:<br>
@@ -24,13 +23,12 @@ RFs:<br>
 └ RF02: Listagem de Livros à venda<br>
 └ RF03: Filtro categórico de busca para Livros à venda<br>
 └ RF04: Pesquisa de livros ou autores<br>
-└ RF05: Favoritar Obras<br>
-└ RF06: Carrinho de compras<br>
-└ RF07: Envio de obras digitais / Envio de obras à venda<br>
-└ RF08: Registrar usuário como autor caso haja obras em seu nome<br>
-└ RF09: Demos de Livros<br>
-└ RF10: Biblioteca de Ebooks do usuário<br>
-└ RF11: Leitura das Obras Adquiridas<br>
+└ RF05: Carrinho de compras<br>
+└ RF06: Envio de obras digitais / Envio de obras à venda<br>
+└ RF07: Registrar usuário como autor caso haja obras em seu nome<br>
+└ RF08: Demos de Livros<br>
+└ RF09: Biblioteca de Ebooks do usuário<br>
+└ RF10: Leitura das Obras Adquiridas<br>
 _______________________________________________________________<br>**
 <br><br>
 
